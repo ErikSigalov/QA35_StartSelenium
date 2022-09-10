@@ -119,10 +119,10 @@ public class Start {
 
         //find element of form
         WebElement name = wd.findElement(By.name("name"));
-        WebElement name1 = wd.findElement(By.cssSelector("placeholder='Type your name'"));
+        WebElement name1 = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
         WebElement surname = wd.findElement(By.name("surename"));
-        WebElement surname1 = wd.findElement(By.cssSelector("placeholder='Type your surename'"));
-        WebElement send = wd.findElement(By.className(".btn"));
+        WebElement surname1 = wd.findElement(By.cssSelector("[placeholder='Type your surename']"));
+        WebElement send = wd.findElement(By.className("btn"));
         WebElement send2 = wd.findElement(By.cssSelector(".btn"));
 
 
@@ -131,6 +131,7 @@ public class Start {
         WebElement element1 = list4.get(9); ///Poland
         String text = element1.getText();
         System.out.println(text);
+
 
         wd.quit();
     }
